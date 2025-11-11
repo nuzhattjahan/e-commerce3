@@ -1,0 +1,84 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/* Standardize image area */
+.images {
+  background-color: #f5f5f5;
+  /* position: relative; */
+  width: 100%;
+  
+}
+
+.images img {
+  width: 100%;
+  height: 150px;
+  /* justify-content: center; */
+  object-fit: contain;
+  align-items: center;
+  transition: transform 0.4s ease;
+}
+
+
+/* Content below image */
+.content {
+  padding: 20px;
+  text-align: left !important;
+}
+
+.pricing span {
+  font-weight: 600;
+  color: #000;
+}
+
+.pricing del {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+}
+/* Cart */
+.cart{
+  background-color: #000;
+}
+.cart {
+  width: 100% !important;
+  border-radius: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease-in-out;
+}
+
+.card:hover .cart {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 0.4s ease-in-out;
+}
+
+.mySwiper1 {
+  margin: 20px 0;
+  padding-bottom: 40px;
+}
+.btnPosition{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #db4444;
+  border: none;
+  color: white;
+  padding: 12px;
+}

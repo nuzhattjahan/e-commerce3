@@ -1,0 +1,97 @@
+.row{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.bg-body-tertiary{
+    padding: 10px 110px;
+}
+.search-bar{
+    width: 300px;
+    height: 40px;
+    position: relative;
+}
+.search-icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    padding-right: 20px;
+}
+.nav-icons{
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+
+/* Banner */
+.mySwiper1 .swiper-slide {
+  background-color: black;
+  color: white;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+  border: 3px solid white;
+  width: 13px !important;
+  height: 13px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: red !important;
+  border: 3px solid white;
+  width: 13px !important;
+  height: 13px !important;
+}
+.todays{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+.redColor{
+    color: #db4444;
+    padding-left: 7px;
+}
+.redBox{
+    width: 15px;
+    height: 40px;
+    background-color: #db4444;
+    border-radius: 5px;
+    
+}
+.red-btn{
+    background-color: #db4444;
+    border: none;
+    color: white;
+    padding: 12px;
+}
+.pl-0{
+    padding-left: 0;
+}
+.pr-0{
+    padding-right: 0;
+}
+.p1{
+  padding: 10px;
+}
+.swiper-button-prev, .swiper-button-next svg{
+  color: #333 !important;
+  padding: 10px !important;
+  align-items: center !important;
+  background-color: #e0dfdf;
+  border-radius: 50%;
+}
+/* .swiper-button-next{
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+}
+.swiper-button-prev{
+  position: absolute !important;
+  bottom: 0 !important;
+  right: 0px !important;
+} */
+ 
+.swiper-wrapper{
+  gap: 5px !important;
+}
+
+

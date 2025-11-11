@@ -1,0 +1,92 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Standardize image area */
+.images {
+  background-color: #f5f5f5;
+  position: relative;
+  width: 100%;
+  height: 220px; /* fixed height keeps all cards even */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.images img {
+  max-width: 80%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.images:hover img {
+  transform: scale(1.05);
+}
+
+/* Discount label */
+.discountPercent {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #db4444;
+  font-size: 0.9rem;
+  font-weight: 500;
+  z-index: 2;
+}
+
+/* Content below image */
+.content {
+  padding: 20px;
+  text-align: left;
+}
+
+.pricing span {
+  font-weight: 600;
+  color: #000;
+}
+
+.pricing del {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.cart button {
+  width: 100% !important;
+  border-radius: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease-in-out;
+}
+
+.card:hover .cart button {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mySwiper {
+  margin: 20px 30px;
+  padding-bottom: 40px; 
+}

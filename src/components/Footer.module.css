@@ -1,0 +1,35 @@
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+.footer p{
+    color: white;
+    font-size: 13px;
+}
+.email{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+.email input{
+    border: 1px solid white;
+    font-size: 12px;
+    background-color: black;
+}
+.search{
+    font-size: 12px;
+    position: absolute;
+    top: 2px;
+    right: 60px;
+}
+.icons{
+    font-size: 18px;
+    display: flex;
+}
+.icon{
+    padding: 0 8px;
+}
