@@ -1,0 +1,140 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table tr {
+  border-bottom: 1px solid #ccc;
+}
+
+.table td,
+.table th {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.mainContent {
+  padding: 70px;
+}
+
+/* Quantity box */
+.inputBox {
+  position: relative;
+  display: inline-block;
+}
+
+.inputBox input {
+  width: 60px;
+  height: 35px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  padding-right: 18px; /* make room for arrows */
+}
+
+/* Hide default browser spinner */
+.inputBox input::-webkit-inner-spin-button,
+.inputBox input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputBox input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Custom arrow buttons inside the box */
+.arrows {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90%;
+}
+
+.arrows button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 10px;
+  line-height: 10px;
+  color: #666;
+  padding: 0;
+  height: 10px;
+}
+
+.arrows button:hover {
+  color: #db4444;
+}
+
+/* Buttons below */
+.button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.whitebtn {
+  background-color: white;
+  border: 1px solid #aaa;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.whitebtn:hover {
+  border-color: #db4444;
+  color: #db4444;
+}
+
+/* Total section */
+.totalBox {
+  margin-top: 30px;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* coupon */
+.coupon{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+.coupon .btn{
+    background-color: #db4444;
+    border-radius: none !important;
+    color: white;
+    
+}
+
+.cartTotal{
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  padding: 10px;
+}
+.cartTotal table{
+  width: 100%;
+  height: auto;
+}
+.cartTotal tr{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+}
+.cartTotal .btn{
+    background-color: #db4444;
+    border-radius: none !important;
+    color: white;
+}
+.btn:hover{
+  background-color: white;
+  border: 1px solid #db4444;
+  color: #db4444;
+}
+

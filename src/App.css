@@ -63,6 +63,7 @@
     color: white;
     padding: 12px;
 }
+
 .pl-0{
     padding-left: 0;
 }
@@ -92,6 +93,9 @@
  
 .swiper-wrapper{
   gap: 5px !important;
+}
+.nav-icons a{
+  color: #333;
 }
 
 

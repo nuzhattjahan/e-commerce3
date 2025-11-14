@@ -10,6 +10,16 @@ import Bottom from "./components/Bottom";
 const Home = () => {
   return (
     <>
+
+  {/* 
+    bootstrap classes 
+    sm = small screen
+    md = medium screen
+    lg = large screen
+    xl = xtra large screen
+    
+    col-lg-6 col-lg-6
+  */}
     <div className="container">
       <div className="row">
         <div className="col-3"><Categories/></div>

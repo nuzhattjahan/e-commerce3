@@ -2,18 +2,14 @@ import React from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaSearch } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import App from "../App.css"
 const Navbar = () => {
   return (
     <>
-      {/* <div className="container">
-        <div className="row">
-          <div className="col-12"> */}
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
               <div class="container-fluid">
-                <a class="navbar-brand Nabar" href="#">
-                  Exclusive
-                </a>
+                <Link className="navbar-brand Nabar" to="/">Exclusive</Link>
                 <button
                   class="navbar-toggler"
                   type="button"
@@ -31,25 +27,19 @@ const Navbar = () => {
                 >
                   <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="/">
-                        Home
-                      </a>
+                      <Link className="nav-link active" to="/">Home</Link>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" href="/contact">
-                        Contact
-                      </a>
+                      <Link className="nav-link active" to="/contact">Contact</Link>
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link active" href="/about">
-                        About
-                      </a>
+                      <Link class="nav-link active" to="/about">About</Link>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" href="/about">
-                        Sign Up
-                      </a>
+                      <Link class="nav-link active" to="/signup"> Sign Up</Link>
+                        
+                      
                     </li>
                   </ul>
                   <form class="d-flex search-bar" role="search">
@@ -57,8 +47,8 @@ const Navbar = () => {
                     <input class="form-control me-2" type="search" placeholder="What are you looking for?" aria-label="Search" />
                     <span className="search-icon"><FaSearch /></span>
                   </form>
-                  <span className="nav-icons"><FaRegHeart /></span>
-                  <span className="nav-icons"><FiShoppingCart /></span>
+                  <span className="nav-icons"><Link to="/wishlist"><FaRegHeart /></Link></span>
+                  <span className="nav-icons"><Link to="/cart"><FiShoppingCart /></Link></span>
 
             
                 </div>

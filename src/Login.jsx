@@ -1,9 +1,8 @@
 import React from 'react';
-import styles from "./SignUp.module.css";
-import { Link } from "react-router-dom";
+import styles from "./Login.module.css";
 
 
-const SignUp = () => {
+const Login = () => {
   return (
     <>
       <div className="container">
@@ -15,17 +14,16 @@ const SignUp = () => {
         </div>
         <div className="col-6">
           <div className={styles.form}>
-            <h2>Create an Account</h2>
+            <h2>Log in to Exclusive</h2>
             <p>Enter your details below</p>
             <form action="#" method='post'>
-            <input type="text" name='name' placeholder='Name' />
             <input type="email" name='email' placeholder='Email'  />
             <input type="password" name="password" placeholder='password' />
-            <div className={` ${styles.buttons}`}>
-            <button className={`btn red-btn ${styles.signup}`}>Create Account</button><hr />
-            <button className={`btn ${styles.signupGoogle}`}>Sign Up with Google</button>
+            <div className={`${styles.links}`}>
+            <button className={`btn red-btn ${styles.signup}`}>Log In</button>
+            <a href="#">Forgot Password?</a>
             </div>
-            <p>Already have an account? <Link to="/login">Log in</Link></p>
+            
           </form>
         </div>
         </div>
@@ -36,4 +34,4 @@ const SignUp = () => {
   )
 }
 
-export default SignUp
+export default Login
