@@ -6,7 +6,7 @@ const HomeBanner = () => {
     <>
       <div className="row py-3">
         <div className={`d-flex ${styles.HomeBanner}`}>
-          <div className="col-5">
+          <div className="col-lg-5">
             <div className={`${styles.content}`}>
               <p>Categories</p>
               <h1>Enhance Your Music Exprience</h1>
@@ -22,7 +22,7 @@ const HomeBanner = () => {
               
             </div>
           </div>
-          <div className={`col-7 ${styles.img}`}>
+          <div className={`col-lg-7 ${styles.img}`}>
             <div className={`${styles.bgimg}`}></div>
           </div>
         </div>

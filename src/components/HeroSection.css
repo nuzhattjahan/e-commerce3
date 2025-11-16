@@ -64,5 +64,7 @@ body {
 }
 .mySwiper1{
   height: 500px;
+  min-height: 200px;
+  display: flex;
 }
 

@@ -89,7 +89,7 @@ const Cart = () => {
       </div>
 
 
-      <div className={`row py-4`}>
+      <div className={`row py-4 justify-content-center`}>
         <div className="col-6">
             <div className={` ${styles.coupon}`}>
             <input type="text" name="coupon" placeholder="Coupon Code" />

@@ -12,6 +12,11 @@ const Home = () => {
     <>
 
   {/* 
+  npm create vite@latest react-project
+  react
+  javascript
+  no
+  yes
     bootstrap classes 
     sm = small screen
     md = medium screen
@@ -19,11 +24,13 @@ const Home = () => {
     xl = xtra large screen
     
     col-lg-6 col-lg-6
+
+    bootstrap 5 quick snippets
   */}
     <div className="container">
       <div className="row">
-        <div className="col-3"><Categories/></div>
-        <div className="col-9"><HeroSection/></div>
+        <div className="col-lg-3"><Categories/></div>
+        <div className="col-lg-9 "><HeroSection/></div>
       </div>
       <div className="row">
           <Cards/>
@@ -35,7 +42,9 @@ const Home = () => {
         <Cards3/>
       </div>
       <div className="row">
+        <div className="col-lg-12">
           <HomeBanner/>
+          </div>
       </div>
       <div className="row">
         <HomeBanner2/>
